@@ -1,0 +1,10 @@
+uC:		MC9S08LL8CGT
+Labeling:	none
+Filename:	LCD_DriverV0_1.s19
+Datum File:	28.10.2014
+FileSize:	2'572 Bytes
+Version:	0.1
+
+16 Bit CRC:	-
+32 Bit CRC:	-
+Area:		00D800h-00FFFFh

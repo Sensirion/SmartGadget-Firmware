@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.freescale.cdt.launch.cw.download">
+<stringAttribute key="com.freescale.cdt.debug.cw.CW_SHADOWED_PREF.Embedded Initialization.initPath" value=""/>
+<stringAttribute key="com.freescale.cdt.debug.cw.CW_SHADOWED_PREF.Embedded Initialization.memConfigPath" value=""/>
+<stringAttribute key="com.freescale.cdt.debug.cw.CW_SHADOWED_PREF.Embedded Initialization.simulator" value=""/>
+<stringAttribute key="com.freescale.cdt.debug.cw.CW_SHADOWED_PREF.Embedded Initialization.systemType" value="com.freescale.cw.system.hcs08.HCS08LL.MC9S08LL8"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.CW_SHADOWED_PREF.Embedded Initialization.useInitFile" value="false"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.CW_SHADOWED_PREF.Embedded Initialization.useMemoryConfigFile" value="false"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.CW_SHADOWED_PREF.GDI Remote Connection.logData" value="false"/>
+<stringAttribute key="com.freescale.cdt.debug.cw.CW_SHADOWED_PREF.HC08 Debugger.processor" value="MC9S08LL8"/>
+<listAttribute key="com.freescale.cdt.debug.cw.CoreNameList">
+<listEntry value="MC9S08LL8#0"/>
+</listAttribute>
+<booleanAttribute key="com.freescale.cdt.debug.cw.Embedded Download.ExecuteTasks" value="false"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.Embedded Download.StandardDownload" value="true"/>
+<listAttribute key="com.freescale.cdt.debug.cw.Embedded Download.TaskInitialLaunches">
+<listEntry value="true"/>
+</listAttribute>
+<listAttribute key="com.freescale.cdt.debug.cw.Embedded Download.TaskNames">
+<listEntry value="MC9S08LL8"/>
+</listAttribute>
+<listAttribute key="com.freescale.cdt.debug.cw.Embedded Download.TaskSuccessiveRuns">
+<listEntry value="true"/>
+</listAttribute>
+<listAttribute key="com.freescale.cdt.debug.cw.Embedded Download.TaskTypes">
+<listEntry value="Flash Programmer for HCS08/RS08/ColdFire V1"/>
+</listAttribute>
+<stringAttribute key="com.freescale.cdt.debug.cw.UDPPort" value="1234"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.core.settings.ConnectionCommonData.TargetConnectionLost.RetryConnectionOn" value="false"/>
+<intAttribute key="com.freescale.cdt.debug.cw.core.settings.ConnectionCommonData.TargetConnectionLost.RetryTimeout" value="20"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.core.settings.ConnectionCommonData.TargetConnectionLost.RetryWithTimeoutOn" value="false"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.core.settings.ConnectionCommonData.TargetConnectionLost.TerminateConnectionOn" value="false"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.core.settings.ConnectionCommonData.TargetConnectionLost.promptUserActionOn" value="true"/>
+<stringAttribute key="com.freescale.cdt.debug.cw.core.settings.DebuggerCommonData.Connection Protocol Plugin Name" value="HC08 GDI"/>
+<stringAttribute key="com.freescale.cdt.debug.cw.core.settings.DebuggerCommonData.Connection Type" value="com.pemicro.mcu.debug.connections.pne.hcs08"/>
+<stringAttribute key="com.freescale.cdt.debug.cw.core.settings.DebuggerCommonData.Connection Type CW Panel" value=""/>
+<stringAttribute key="com.freescale.cdt.debug.cw.core.settings.DebuggerCommonData.Processor Attr Name" value="com.freescale.cdt.debug.cw.CW_SHADOWED_PREF.HC08 Debugger.processor"/>
+<stringAttribute key="com.freescale.cdt.debug.cw.core.settings.GdiConnection.Common.PhysicalConnectionAttributeBase" value="com.pemicro.mcu.debug.connections.pne.hcs08."/>
+<stringAttribute key="com.freescale.cdt.debug.cw.core.settings.GdiConnection.Common.SimulatorConnectionAttributeBase" value=""/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.core.settings.GdiConnection.Common.logData" value="false"/>
+<stringAttribute key="com.freescale.cdt.debug.cw.core.settings.rseSystemId" value="com.freescale.cdt.debug.cw.core.ui.rse.systemtype.bareboard.hardware.130314142656+0100"/>
+<stringAttribute key="com.freescale.cdt.debug.cw.debuggerAddress" value="127.0.0.1"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.disableIO" value="false"/>
+<stringAttribute key="com.freescale.cdt.debug.cw.ethCtrl" value="UEC1"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.executePerCoresReset" value="false"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.executePerprocessorReset" value="false"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.executeReset" value="false"/>
+<stringAttribute key="com.freescale.cdt.debug.cw.gateway" value="127.0.0.1"/>
+<listAttribute key="com.freescale.cdt.debug.cw.initPathList">
+<listEntry value=""/>
+</listAttribute>
+<stringAttribute key="com.freescale.cdt.debug.cw.macAddress" value="**-**-**-**-**-**"/>
+<listAttribute key="com.freescale.cdt.debug.cw.memConfigPathList">
+<listEntry value=""/>
+</listAttribute>
+<stringAttribute key="com.freescale.cdt.debug.cw.netMask" value="255.255.255.255"/>
+<listAttribute key="com.freescale.cdt.debug.cw.perCoreResetList"/>
+<listAttribute key="com.freescale.cdt.debug.cw.perProcessorResetList"/>
+<listAttribute key="com.freescale.cdt.debug.cw.runOutOfResetList">
+<listEntry value="false"/>
+</listAttribute>
+<stringAttribute key="com.freescale.cdt.debug.cw.targetAddress" value="127.0.0.1"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.useGateway" value="false"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.useHSSTIO" value="false"/>
+<listAttribute key="com.freescale.cdt.debug.cw.useInitPathList">
+<listEntry value="false"/>
+</listAttribute>
+<booleanAttribute key="com.freescale.cdt.debug.cw.useMacAddress" value="false"/>
+<listAttribute key="com.freescale.cdt.debug.cw.useMemConfigPathList">
+<listEntry value="false"/>
+</listAttribute>
+<booleanAttribute key="com.freescale.cdt.debug.cw.useNetworkTransferIO" value="false"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.useSerialTransferIO" value="false"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.useStopTransferIO" value="true"/>
+<booleanAttribute key="com.freescale.cdt.debug.cw.useUDPPort" value="false"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.CommandLineArgs" value="hcs08_icd "/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.ConfigFile" value=""/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.Library" value="hcs08_pne_gdi"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_ALTERNATIVE_ALGORITHM_CHECKBOX" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_ALTERNATIVE_ALGORITHM_PATH" value=""/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_AUTO_SYNC" value="1"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_CURRENTDEVICE" value="9S08LL8"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_CURRENTMODE" value="4"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_CURRENT_ALGORITHM_INDEX" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_CUSTOM_TRIM" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_DOTRIM" value="1"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_ENABLE_FLASH_PROGRAMMING_DIALOG" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_ERASE_PROGRAM_WITHOUT_ASKING" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_NGS_TRIM_OVERRIDE_REFERENCE_FREQUENCY" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_PRESERVE1_ACTIVE" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_PRESERVE1_END" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_PRESERVE1_START" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_PRESERVE2_ACTIVE" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_PRESERVE2_END" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_PRESERVE2_START" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_PRESERVE3_ACTIVE" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_PRESERVE3_END" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PEDEBUG_PRESERVE3_START" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.PORT_IP" value=""/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.STARTUP_CyclonePro_PowerDownDelay" value="250"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.STARTUP_CyclonePro_PowerUpDelay" value="250"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.STARTUP_CyclonePro_currentvoltage" value="255"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.STARTUP_CyclonePro_poweroffonexit" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.STARTUP_IO_DELAY_CNT" value="28"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.STARTUP_IO_DELAY_SET" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.STARTUP_PCI_DELAY" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.STARTUP_PORT" value="21"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.STARTUP_RESET_DELAY" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.STARTUP_SHOWDIALOG" value="1"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.STARTUP_SPECIFY_IP" value="127.0.0.1"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.STARTUP_SPECIFY_IP_ENABLED" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.STARTUP_SPECIFY_NETWORKCARD" value="127.0.0.1"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.STARTUP_SPECIFY_NETWORKCARD_ENABLED" value="0"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.STARTUP_USE_CYCLONEPRO_RELAYS" value="1"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.STARTUP_interface_selection" value="1"/>
+<stringAttribute key="com.pemicro.mcu.debug.connections.pne.hcs08.UUID" value="68bb7d77-8df5-403a-8f77-0b09007308d4"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_ID" value="com.freescale.cdt.debug.cw.hc08.HC08Debugger"/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_REGISTER_GROUPS" value=""/>
+<stringAttribute key="org.eclipse.cdt.launch.DEBUGGER_STOP_AT_MAIN_SYMBOL" value="main"/>
+<stringAttribute key="org.eclipse.cdt.launch.FORMAT" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&lt;contentList&gt;&lt;content id=&quot;[10]-ReceivedByte-Button_handler-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;[9]-ReceivedByte-Button_handler-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;[8]-ReceivedByte-Button_handler-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;[7]-ReceivedByte-Button_handler-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;[6]-ReceivedByte-Button_handler-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;[5]-ReceivedByte-Button_handler-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;[4]-ReceivedByte-Button_handler-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;[3]-ReceivedByte-Button_handler-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;[2]-ReceivedByte-Button_handler-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;[1]-ReceivedByte-Button_handler-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;[0]-ReceivedByte-Button_handler-(format)&quot; val=&quot;4&quot;/&gt;&lt;content id=&quot;ReceivedByte-Button_handler-(format)&quot; val=&quot;4&quot;/&gt;&lt;/contentList&gt;"/>
+<stringAttribute key="org.eclipse.cdt.launch.GLOBAL_VARIABLES" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;globalVariableList/&gt;&#13;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.MEMORY_BLOCKS" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;no&quot;?&gt;&#13;&#10;&lt;memoryBlockExpressionList/&gt;&#13;&#10;"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROGRAM_NAME" value="Standard/LCD_Driver.abs"/>
+<stringAttribute key="org.eclipse.cdt.launch.PROJECT_ATTR" value="LCD_Driver"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/LCD_Driver"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.ui.favoriteGroups">
+<listEntry value="org.eclipse.debug.ui.launchGroup.debug"/>
+</listAttribute>
+<stringAttribute key="process_factory_id" value="com.freescale.cdt.debug.cw.core.ProcessFactoryID"/>
+</launchConfiguration>
