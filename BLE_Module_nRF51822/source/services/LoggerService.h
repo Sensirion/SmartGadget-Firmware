@@ -47,10 +47,10 @@ extern const uint8_t LoggerServiceUUID[];
 * download characteristic, the data is returned as notifications (fast but unsafe).<br>
 * Service:  Proprietary, 128bit UUID 0000F234-B38D-4985-720E-0F993A68EE41 <br>
 * Syncronize Timestamp Char: Proprietary, 128bit UUID 0000F235-B38D-4985-720E-0F993A68EE41 <br>
-* Oldest Sample Timestamp Char: Proprietary, 128bit UUID 00002236-B38D-4985-720E-0F993A68EE41 <br>
-* Newest Sample Timestamp Char: Proprietary, 128bit UUID 00002237-B38D-4985-720E-0F993A68EE41 <br>
-* Start Logger Download Char: Proprietary, 128bit UUID 00002238-B38D-4985-720E-0F993A68EE41 <br>
-* Logger Interval Char: Proprietary, 128bit UUID 00002239-B38D-4985-720E-0F993A68EE41 <br>
+* Oldest Sample Timestamp Char: Proprietary, 128bit UUID 0000F236-B38D-4985-720E-0F993A68EE41 <br>
+* Newest Sample Timestamp Char: Proprietary, 128bit UUID 0000F237-B38D-4985-720E-0F993A68EE41 <br>
+* Start Logger Download Char: Proprietary, 128bit UUID 0000F238-B38D-4985-720E-0F993A68EE41 <br>
+* Logger Interval Char: Proprietary, 128bit UUID 0000F239-B38D-4985-720E-0F993A68EE41 <br>
 */
 class LoggerService
 {
