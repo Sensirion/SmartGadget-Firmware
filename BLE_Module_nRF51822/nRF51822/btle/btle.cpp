@@ -60,12 +60,6 @@ static void sys_evt_dispatch(uint32_t sys_evt)
   if(NRF_EVT_FLASH_OPERATION_SUCCESS == sys_evt)
   {
     FlashCmdQueue::popAndExecute();
-    //dbg
-  DigitalOut dbg(p13);
-    dbg.write(1);
-    nrf_delay_us(100);
-    dbg.write(0);
-    //end dbg
 #if NEED_PSTORAGE /* disabled by default */
     pstorage_sys_event_handler(sys_evt);
 #endif
