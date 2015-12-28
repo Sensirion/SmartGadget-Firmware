@@ -129,6 +129,7 @@ private:
   static bool _lastMeasLowRes;
   static int8_t _connSpeedCounter;
   static Gap::Handle_t _currentHandle;
+  static int _loggerDownloadFinishedDelay;
 
   static const char* STR_SHT31_T;
   static const char* STR_SHT31_RH;

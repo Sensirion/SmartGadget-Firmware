@@ -29,7 +29,7 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.*/
 #include "SmartGadget.h"
 
 #define FIRMWARE_VERSION_MAJ 1
-#define FIRMWARE_VERSION_MIN 2
+#define FIRMWARE_VERSION_MIN 3
 
 BLEDevice* SmartGadget::_pBle = NULL;
 ServiceDataHandler* SmartGadget::_pServiceDataHandler = NULL;
@@ -49,6 +49,7 @@ int64_t SmartGadget::_oldestPossibleLogTimeMs = 0;
 int64_t SmartGadget::_newestPossibleLogTimeMs = 0;
 bool SmartGadget::_lastMeasLowRes = false;
 int8_t SmartGadget::_connSpeedCounter = CONNECTION_SPEED_DELAY_TO_SLOW_S;
+int SmartGadget::_loggerDownloadFinishedDelay = 0;
 Gap::Handle_t SmartGadget::_currentHandle = 0;
 const char* SmartGadget::STR_SHT31_T = "SHT31 Temperature in \xc2\xb0\x43";
 const char* SmartGadget::STR_SHT31_RH = "SHT31 Humidity in %RH";
@@ -254,6 +255,12 @@ void SmartGadget::periodicCallback(void* p_context)
   {
     _pServiceDataHandler->notificationHandler(ServiceDataHandler::CONTEXT_APP);
     handleConnectionSpeed();
+    if(_loggerDownloadFinishedDelay > 0)
+    {
+      _loggerDownloadFinishedDelay--;
+      if(_loggerDownloadFinishedDelay == 0)
+        _pLoggerService->setStartLoggerDownloadCharacteristic(0);
+    }
   }
 
   _timeMs += PERIODIC_CALLBACK_INTERVAL_MS;
@@ -269,7 +276,7 @@ void SmartGadget::handleAdvertising()
 
 void SmartGadget::loggerDownloadFinished()
 {
-  _pLoggerService->setStartLoggerDownloadCharacteristic(0);
+  _loggerDownloadFinishedDelay = 2;
 }
 
 void SmartGadget::batteryLevelWasRead(GattCharacteristicReadAuthCBParams* para)
@@ -334,8 +341,8 @@ void SmartGadget::syncTimeMsValueUpdated(uint32_t currentLoggerIntervalMs)
 
 void SmartGadget::oldestSampleTimeMsValueUpdated(uint32_t currentLoggerIntervalMs)
 {
-  uint32_t newOldestTimeMs = _pLoggerService->getOldestSampleTimeMsCharacteristicValue();
-  uint32_t currentNewestTimeMs = _pLoggerService->getNewestSampleTimeMsCharacteristicValue();
+  uint64_t newOldestTimeMs = _pLoggerService->getOldestSampleTimeMsCharacteristicValue();
+  uint64_t currentNewestTimeMs = _pLoggerService->getNewestSampleTimeMsCharacteristicValue();
   if (_oldestPossibleLogTimeMs > newOldestTimeMs) //prevent out of range
   {
     newOldestTimeMs = _oldestPossibleLogTimeMs;
@@ -344,7 +351,7 @@ void SmartGadget::oldestSampleTimeMsValueUpdated(uint32_t currentLoggerIntervalM
   {
     newOldestTimeMs = currentNewestTimeMs;
   }
-  uint32_t offset = currentLoggerIntervalMs - (newOldestTimeMs - _oldestPossibleLogTimeMs) % currentLoggerIntervalMs;
+  uint64_t offset = currentLoggerIntervalMs - (newOldestTimeMs - _oldestPossibleLogTimeMs) % currentLoggerIntervalMs;
   newOldestTimeMs += (offset == currentLoggerIntervalMs) ? 0 : offset;
 
   _pLoggerService->setOldestSampleTimeMsCharacteristic(newOldestTimeMs);
@@ -353,8 +360,8 @@ void SmartGadget::oldestSampleTimeMsValueUpdated(uint32_t currentLoggerIntervalM
 
 void SmartGadget::newestSampleTimeMsValueUpdated(uint32_t currentLoggerIntervalMs)
 {
-  uint32_t newNewestTimeMs = _pLoggerService->getNewestSampleTimeMsCharacteristicValue();
-  uint32_t currentOldestTimeMs = _pLoggerService->getOldestSampleTimeMsCharacteristicValue();
+  uint64_t newNewestTimeMs = _pLoggerService->getNewestSampleTimeMsCharacteristicValue();
+  uint64_t currentOldestTimeMs = _pLoggerService->getOldestSampleTimeMsCharacteristicValue();
   if (_newestPossibleLogTimeMs < newNewestTimeMs) //prevent out of range
   {
     newNewestTimeMs = _newestPossibleLogTimeMs;
@@ -363,7 +370,7 @@ void SmartGadget::newestSampleTimeMsValueUpdated(uint32_t currentLoggerIntervalM
   {
     newNewestTimeMs = currentOldestTimeMs;
   }
-  uint32_t offset = (currentLoggerIntervalMs - (_newestPossibleLogTimeMs - newNewestTimeMs) % currentLoggerIntervalMs);
+  uint64_t offset = (currentLoggerIntervalMs - (_newestPossibleLogTimeMs - newNewestTimeMs) % currentLoggerIntervalMs);
   newNewestTimeMs -= (offset == currentLoggerIntervalMs) ? 0 : offset;
 
   _pLoggerService->setNewestSampleTimeMsCharacteristic(newNewestTimeMs);
